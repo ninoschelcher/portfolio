@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'DDCHardware-compressed';
+    src: url('fonts/DDCHardware-Compressed.otf');
+}
+
+@font-face {
+    font-family: 'DDCHardware-regular';
+    src: url('../fonts/DDCHardware-Regular.otf');
+}
+
+/* body */
+html,
+body {
+    position: relative;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    max-width: 420px;
+}
+
+body {
+    /*background-image: url('../images/studenthotel2.jpg');*/
+    /*background-size: cover;*/
+    height: 100vh;
+    margin: 0;
+}
+
+.ui-page.ui-page-theme-a.ui-page-active {
+    min-height: 0 !important;
+}
+
+/* Header */
+.header {
+    background-color: #544C7B;
+    padding: 10px;
+}
+
+.header h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'DDCHardware-regular';
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.header a:first-child {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.header a:nth-child(2) {
+    position: absolute;
+    color: #fff;
+    right: 30px;
+    top: 15px;
+}
+
+.page a {
+    color: #fff;
+    width: 1000px;
+}
+
+/* Content */
+.bannerstudenthotel {
+    background-image: url('../images/studenthotel2.jpg');
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banneroba1 {
+    background-image: url('../images/OBA.jpg');
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bannercenc {
+    background-image: url('../images/cenc.jpg');
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bannerfridaynext {
+    background-image: url('../images/fridaynext.jpg');
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bannerstadskantine {
+    background-image: url('../images/stadskantine.jpg');
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.banneroba2 {
+    background-image: url('../images/oba2.jpg');
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bannerdignita {
+    background-image: url('../images/dignita.jpg');
+    height: 150px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.content h1,
+.iconen h2 {
+    font-family: 'DDCHardware-regular';
+    color: #544c7b;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.content p {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+
+.iconen p {
+    margin-left: 10px;
+}

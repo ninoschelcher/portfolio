@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'DDCHardware-compressed';
+  src: url('fonts/DDCHardware-Compressed.otf');
+}
+
+@font-face {
+  font-family: 'DDCHardware-regular';
+  src: url('../fonts/DDCHardware-Regular.otf');
+}
+
+
+/*body */
+body {
+    margin: 0;
+    max-width: 420px;
+}
+
+
+/* page */
+.wrapper {
+    background-image: url('../images/intro.jpg');
+    height:210vw;
+    background-size:cover;
+    background-position:center center;
+}
+
+.wrapper .content h1 {
+    font-family: 'DDCHardware-Regular', sans-serif;
+    color: #fff;
+    background-color: #544c7b;
+    margin: 0;
+    font-size: 5.5em;
+    padding: 30px;
+}
+
+.wrapper .content p {
+    background-color: #fff;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    max-width: 470px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    position: absolute;
+    display: block;
+    left:180px;
+    top:530px;
+}
+

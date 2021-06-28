@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'DDCHardware-compressed';
+    src: url('fonts/DDCHardware-Compressed.otf');
+}
+
+@font-face {
+    font-family: 'DDCHardware-regular';
+    src: url('../fonts/DDCHardware-Regular.otf');
+}
+
+/* body */
+html,
+body {
+    position: relative;
+    height: 100%;
+    max-width: 420px;
+}
+
+body {
+    /*background-image: url('../images/studenthotel2.jpg');*/
+    /*background-size: cover;*/
+    height: 100vh;
+    margin: 0;
+}
+
+.ui-page.ui-page-theme-a.ui-page-active {
+    min-height: 0 !important;
+}
+
+/* Header */
+.header {
+    background-color: #544C7B;
+    padding: 10px;
+}
+
+.header h1 {
+    text-align: center;
+    color: #fff;
+    font-family: 'DDCHardware-regular';
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.header a {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.page a {
+    color: #fff;
+    width: 1000px;
+}
+
+/* Resultaten */
+.handler {
+    position: absolute;
+    width: 100%;
+    z-index: 99999;
+}
+
+.handler a {
+    color: #544c7b;
+    background-color: #fff;
+    padding: 5px 8px;
+    font-size: 1.5em;
+}
+
+.handler a:first-child {
+    position: absolute;
+    top: 210px;
+}
+
+.handler a:last-child {
+    position: absolute;
+    right: 0;
+    top: 210px;
+}
+
+.resultaten {
+    background-color: #fff;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 100px;
+    padding: 5px 15px;
+}
+
+.resultaten p {
+    margin: 0;
+    font-family: 'DDCHardware-regular';
+    color: #544c7b;
+}
+
+/* Content */
+.pagecontent {
+    position: absolute;
+    background-color: rgb(84, 76, 123, 0.9);
+    height: 240px;
+    bottom: 0px;
+    width: 100%;
+}
+
+.pagecontent h2 {
+    color: #fff;
+    font-family: 'DDCHardware-regular';
+    font-size: 1.3em;
+    margin: 10px 0px 0px 10px;
+    padding-top:30px;
+}
+
+.pagecontent p {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    margin: 10px 0px 0px 10px;
+    font-size: 15px;
+}
+
+.pagecontent p:nth-child(2) {
+    margin-bottom: -10px;
+}
+
+.pagecontent .iconen {
+    display: block;
+}
+
+.pagecontent .iconen p {
+    display: inline;
+    margin: 0px 20px 0px 20px;
+    font-size: 25px;
+}
+
+.pagecontent p:nth-child(4),
+.pagecontent p:last-child {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.pagecontent p:nth-child(4) a,
+.pagecontent p:last-child a {
+    font-family: 'DDCHardware-regular';
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 5px;
+
+}

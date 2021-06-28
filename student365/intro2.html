@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Intro | Student365</title>
+    <link rel="stylesheet" href="styles/intro2.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <h1>Student365</h1>
+            <p>The app to find your studyplace!</p>
+        </div>
+
+
+    </div>
+    <div class="locatie">
+        <p id="info">Deze app vraagt om uw locatiegegevens. Wilt u de locatieservices aanzetten?</p>
+        <p><a href="filters.html">Ja</a></p>
+        <p><a href="intro.html">Nee, bedankt</a></p>
+    </div>
+    <script>
+        var x = document.getElementById("info");
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported by this browser.";
+            }
+
+        }
+
+        function showPosition(position) {
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+                "<br>Longitude: " + position.coords.longitude;
+
+            window.location.href = "filters.html";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+.page {
+	width: 100%;
+	float: left;
+	transition: transform 0.5s;
+	transform: translateX(0px);
+    display: none;
+}
+
+.page img {
+	width: 420px;
+	height: 687px;
+}
+
+#pagewrapper {
+    display: flex;
+    height: 687px;
+    overflow: hidden;
+}
+
+html, body {
+	height: 100%;
+}

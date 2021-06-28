@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student365 | Filters</title>
+    <link rel="stylesheet" href="styles/filters.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+
+<body>
+    <script>
+        function cSearch () {
+            Cookies.set("sockets", false, {expires: 30});
+            Cookies.set("wifi", false, {expires: 30});
+            Cookies.set("fooddrinks", false, {expires: 30});
+            Cookies.set("quiet", false, {expires: 30});
+            Cookies.set("offset", 0, {expires: 30});
+            
+            if ($("#sockets").prop("checked")) {
+                Cookies.set("sockets", true, {expires: 30});
+            }
+             if ($("#wifi").prop("checked")) {
+                Cookies.set("wifi", true, {expires: 30});
+            }
+             if ($("#fooddrinks").prop("checked")) {
+                Cookies.set("fooddrinks", true, {expires: 30});
+            }
+             if ($("#quiet").prop("checked")) {
+                Cookies.set("quiet", true, {expires: 30});
+            }
+            
+            window.location.href = "resultaten.html";
+        }
+    </script>
+    <main>
+        <div class="header">
+            <a href="intro.html"><i class="fas fa-times"></i></a>
+            <h1>Student365</h1>
+        </div>
+
+        <div class="filters">
+            <h2>Filters</h2>
+        </div>
+
+        <!-- https://www.w3schools.com/howto/howto_js_rangeslider.asp !-->
+        <div class="afstandfilter">
+            <p> Max distance in km </p>
+            <div class="slidecontainer">
+                <input type="range" min="0" max="10" value="0" step="0.1" class="slider" id="myRange">
+                <output name="rangeVal">0</output>
+            </div>
+        </div>
+
+        <div class="sockets">
+            <p> Wall outlet </p>
+            <label class="container">
+                <input type="checkbox" id="sockets">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <div class="wifi">
+            <p> Wifi </p>
+            <label class="container">
+                <input type="checkbox" id="wifi">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <div class="food-drinks">
+            <p> Food/Drinks </p>
+            <label class="container">
+                <input type="checkbox" id="fooddrinks">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+
+        <div class="quiet">
+            <p> Quiet </p>
+            <label class="container">
+                <input type="checkbox" id="quiet">
+                <span class="checkmark"></span>
+            </label>
+        </div>
+        
+        <div class="search">
+            <p> <a onclick="cSearch();"> Search </a> </p>
+        </div>
+
+
+    </main>
+
+
+    <script>
+        $("#sockets").prop('checked', (Cookies.get('sockets') === "true"))
+        $("#wifi").prop('checked', (Cookies.get('wifi') === "true"))
+        $("#fooddrinks").prop('checked', (Cookies.get('fooddrinks') === "true"))
+        $("#quiet").prop('checked', (Cookies.get('quiet') === "true"))
+
+        $('input[type="range"]').on('input', function() {
+
+            var control = $(this),
+                controlMin = control.attr('min'),
+                controlMax = control.attr('max'),
+                controlVal = control.val(),
+                controlThumbWidth = control.data('thumbwidth');
+
+            var range = controlMax - controlMin;
+
+            var position = ((controlVal - controlMin) / range) * 100;
+            var positionOffset = Math.round(controlThumbWidth * position / 100) - (controlThumbWidth / 2);
+            var output = control.next('output');
+
+            output
+                .css('left', 'calc(' + position + '% - ' + positionOffset + 'px)')
+                .text(controlVal);
+
+        });
+    </script>
+</body>
+
+</html>

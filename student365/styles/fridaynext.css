@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'DDCHardware-compressed';
+  src: url('fonts/DDCHardware-Compressed.otf');
+}
+
+@font-face {
+  font-family: 'DDCHardware-regular';
+  src: url('../fonts/DDCHardware-Regular.otf');
+}
+
+
+/* body */
+html, body {
+     position: relative;
+     height: 100%;
+     max-width: 420px;
+   }
+
+body{
+    /*background-image: url('../images/studenthotel2.jpg');*/
+    /*background-size: cover;*/
+    height: 100vh;
+    margin:0;
+}
+
+.ui-page.ui-page-theme-a.ui-page-active {
+    min-height: 0 !important;
+}
+
+/* Header */
+.header {
+  background-color: #544C7B;
+  padding: 10px;
+}
+
+.header h1 {
+  text-align: center;
+  color: #fff;
+  font-family: 'DDCHardware-regular';
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.header a {
+  color:#fff;
+  position: absolute;
+  top:15px;
+  left:20px;
+}
+
+.page a {
+  color:#fff;
+  width:1000px;
+}

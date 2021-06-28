@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student365 | Resultaten</title>
+    <link rel="stylesheet" href="styles/resultaten.css">
+    <link rel="stylesheet" href="styles/swipe.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <!--jquery mobile-->
+</head>
+
+<body>
+    <div class="header">
+        <a onclick="goto('filters.html')"><i class="fas fa-filter"></i></a>
+        <h1>Student365</h1>
+    </div>
+
+    <div class="resultaten">
+        <p>0 Results</p>
+    </div>
+
+
+
+    <div id="pagewrapper">
+        <div class="handler">
+            <a onclick="swiperightHandler(null)"><i class="fas fa-angle-left"></i></a>
+            <a onclick="swipeleftHandler(null)"><i class="fas fa-angle-right"></i></a>
+        </div>
+
+        <!-- Studenthotel -->
+        <div class="page wifi sockets fooddrinks">
+            <img src="images/studenthotel2.jpg" alt="">
+            <div class="pagecontent">
+                <h2> Studenthotel City </h2>
+                <p> Quiet study place in a trendy atmposhere</p>
+                <div class="iconen">
+                    <p><i class="fas fa-wifi"></i></p>
+                    <p><i class="fas fa-utensils"></i></p>
+                    <p><i class="fas fa-plug"></i></p>
+                </div>
+                <p> <a href="https://www.google.nl/maps/dir//studenthotel/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47c60984a6355d93:0x1cdeffbd317593a5?ved=2ahUKEwjFoueb3cHeAhWQbFAKHaRHBekQ9RcwAHoECAEQCQ">Show direction</a></p>
+                <p><a onclick="goto('studieplekken/studenthotel.html')">Read more</a></p>
+            </div>
+        </div>
+
+        <!-- Friday Next -->
+        <div class="page wifi fooddrinks">
+            <img src="images/fridaynext.jpg" alt="">
+
+            <div class="pagecontent">
+                <h2> Friday Next </h2>
+                <p>Studio converted into a cozy place to study</p>
+                <div class="iconen">
+                    <p><i class="fas fa-wifi"></i></p>
+                    <p><i class="fas fa-utensils"></i></p>
+                </div>
+                <p> <a href="https://www.google.nl/maps/dir//Friday+Next,+Heemstedestraat+20-H,+1058+NM+Amsterdam/data=!4m16!1m6!3m5!1s0x0:0x50aa9bb8c3a92fb0!2sFriday+Next!8m2!3d52.3517135!4d4.8484718!4m8!1m0!1m5!1m1!1s0x47c5e21c63bca627:0x50aa9bb8c3a92fb0!2m2!1d4.8484718!2d52.3517135!3e1">Show direction</a></p>
+                <p><a onclick="goto('studieplekken/fridaynext.html')">Read more</a></p>
+            </div>
+        </div>
+
+        <!-- OBA Amsterdam -->
+        <div class="page quiet wifi sockets fooddrinks">
+            <img src="images/OBA.jpg" alt="">
+
+            <div class="pagecontent">
+                <h2> Library Oosterdok </h2>
+                <p>One of the most popular libraries to study</p>
+                <div class="iconen">
+                    <p><i class="fas fa-wifi"></i></p>
+                    <p><i class="fas fa-utensils"></i></p>
+                    <p><i class="fas fa-plug"></i></p>
+                    <p><i class="fas fa-comment-slash"></i></p>
+                </div>
+                <p> <a href="https://www.google.nl/maps/dir//bibliotheek+oosterdok/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47c609d7c00d474f:0x6b97f693e6ecb494?ved=2ahUKEwj6j9_13MHeAhXJKVAKHY01C0gQ9RcwAHoECAEQCQ">Show direction</a></p>
+                <p><a onclick="goto('studieplekken/oba.html')">Read more</a></p>
+            </div>
+        </div>
+
+        <!-- Coffee and Coconuts -->
+        <div class="page wifi sockets fooddrinks">
+            <img src="images/cenc.jpg" alt="">
+
+            <div class="pagecontent">
+                <h2> Coffee and Coconuts </h2>
+                <p>Trendy place to study and eat in The Pijp</p>
+                <div class="iconen">
+                    <p><i class="fas fa-wifi"></i></p>
+                    <p><i class="fas fa-utensils"></i></p>
+                    <p><i class="fas fa-plug"></i></p>
+                </div>
+                <p> <a href="https://www.google.nl/maps/dir//CT+coffee+%26+coconuts,+Ceintuurbaan+282-284,+1072+GK+Amsterdam/data=!3m1!4b1!4m16!1m6!3m5!1s0x0:0x2b590d1b177aa4eb!2sCT+coffee+%26+coconuts!8m2!3d52.3526635!4d4.8915291!4m8!1m0!1m5!1m1!1s0x47c609f3304eb613:0x2b590d1b177aa4eb!2m2!1d4.8915291!2d52.3526635!3e1">Show direction</a></p>
+                <p><a onclick="goto('studieplekken/cenc.html')">Read more</a></p>
+            </div>
+        </div>
+
+        <!-- Stadskantine -->
+        <div class="page wifi sockets fooddrinks">
+            <img src="images/stadskantine.jpg" alt="">
+
+            <div class="pagecontent">
+                <h2> Stadskantine </h2>
+                <p>Study in the urban laidback place called Stadskantine</p>
+                <div class="iconen">
+                    <p><i class="fas fa-wifi"></i></p>
+                    <p><i class="fas fa-utensils"></i></p>
+                    <p><i class="fas fa-plug"></i></p>
+                </div>
+                <p> <a href="https://www.google.nl/maps/dir//stadskantine/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47c6098e4d02d64f:0xaf35470ce53ce571?ved=2ahUKEwjehozW4MHeAhXDy6QKHeLZDcgQ9RcwC3oECAYQEA">Show direction</a></p>
+                <p><a onclick="goto('studieplekken/stadskantine.html')">Read more</a></p>
+            </div>
+        </div>
+
+        <!-- OBA2 -->
+        <div class="page wifi sockets quiet">
+            <img src="images/oba2.jpg" alt="">
+
+            <div class="pagecontent">
+                <h2> Library Olympisch Kwartier </h2>
+                <p>One of Amsterdam's libraries to study</p>
+                <div class="iconen">
+                    <p><i class="fas fa-wifi"></i></p>
+                    <p><i class="fas fa-plug"></i></p>
+                    <p><i class="fas fa-comment-slash"></i></p>
+                </div>
+                <p> <a href="https://www.google.nl/maps/dir//oba+olympisch+kwartier/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47c5e1f8c3dd2c33:0xe0dd281fc2553029?ved=2ahUKEwjdhI3WhsLeAhVE3qQKHYQ4AdYQ9RcwC3oECAYQEA">Show direction</a></p>
+                <p><a onclick="goto('studieplekken/oba2.html')">Read more</a></p>
+            </div>
+        </div>
+
+        <!-- Dignita -->
+        <div class="page wifi sockets fooddrinks">
+            <img src="images/dignita.jpg" alt="">
+
+            <div class="pagecontent">
+                <h2> Dignita </h2>
+                <p>Trendy cafe near the famous Vondelpark</p>
+                <div class="iconen">
+                    <p><i class="fas fa-wifi"></i></p>
+                    <p><i class="fas fa-utensils"></i></p>
+                    <p><i class="fas fa-plug"></i></p>
+                </div>
+                <p> <a href="https://www.google.nl/maps/dir//cafe+dignita/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x47c5e203f3c95efb:0x7c8d6e9318271962?ved=2ahUKEwjsi-vohsLeAhWELVAKHV74B0AQ9RcwAHoECAEQCQ">Show direction</a></p>
+                <p><a onclick="goto('studieplekken/dignita.html')">Read more</a></p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        $.mobile.loading().hide();
+        $("body").on("swipeleft", swipeleftHandler);
+        $("body").on("swiperight", swiperightHandler);
+        var totalpages = $(".page").length;
+        var page = Cookies.get("offset");
+        var sockets = Cookies.get("sockets");
+        var wifi = Cookies.get("wifi");
+        var fooddrinks = Cookies.get("fooddrinks");
+        var quiet = Cookies.get("quiet");
+        
+        function setOffset () {
+            var offset = $('.page').width() * page;
+            $(".page").css("transform", "translateX(-" + offset + "px)");
+            updateHandler();
+        }
+
+        function swipeleftHandler(event) {
+            if (page < totalpages - 1) {
+                page++;
+                var offset = $('.page').width() * page;
+                $(".page").css("transform", "translateX(-" + offset + "px)");
+                updateHandler();
+            }
+        }
+
+        function swiperightHandler(event) {
+            if (page > 0) {
+                page--;
+                var offset = $('.page').width() * page;
+                $(".page").css("transform", "translateX(-" + offset + "px)");
+                updateHandler();
+            }
+        }
+
+        function updateHandler() {
+            if (totalpages > 1) {
+                if (page == 0) {
+                    $(".fa-angle-left").parent().css('display', 'none');
+                    $(".fa-angle-right").parent().css('display', 'block');
+                } else if (page == totalpages - 1) {
+                    $(".fa-angle-left").parent().css('display', 'block');
+                    $(".fa-angle-right").parent().css('display', 'none');
+                } else {
+                    $(".fa-angle-left").parent().css('display', 'block');
+                    $(".fa-angle-right").parent().css('display', 'block');
+                }
+            } else {
+                $(".fa-angle-left").parent().css('display', 'none');
+                $(".fa-angle-right").parent().css('display', 'none');
+            }
+        }
+
+        function goto(uri) {
+            Cookies.set("offset", page, {expires: 30});
+            window.location.href = uri;
+        }
+
+        var query = "";
+        if (sockets == "true") {
+            query += ".sockets";
+        }
+        if (wifi == "true") {
+            query += ".wifi";
+        }
+        if (fooddrinks == "true") {
+            query += ".fooddrinks";
+        }
+        if (quiet == "true") {
+            query += ".quiet";
+        }
+
+        $(query).each(function(index) {
+            totalpages = index + 1;
+            $(this).css('display', 'block');
+            if (totalpages == 1) {
+                $(".fa-angle-left").parent().css('display', 'none');
+                $(".fa-angle-right").parent().css('display', 'none');
+            } else if (totalpages > 1) {
+                $(".fa-angle-left").parent().css('display', 'none');
+                $(".fa-angle-right").parent().css('display', 'block');
+                setOffset();
+            }
+            $(".resultaten p").text(totalpages + " Results");
+        });
+
+        if (query == "") {
+            $(".fa-angle-left").parent().css('display', 'none');
+            $(".page").css('display', 'block');
+            setOffset();
+            $(".resultaten p").text(totalpages + " Results");
+        }
+    </script>
+</body>
+
+
+</html>
